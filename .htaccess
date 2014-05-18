@@ -1,0 +1,19 @@
+php_value session.gc_maxlifetime 300
+php_value session.cookie_lifetime 300
+php_value allow_url_fopen Off
+
+RewriteEngine On
+Options -Indexes
+RewriteBase /
+RewriteRule ^.htaccess$ - [F]
+
+AddDefaultCharset UTF-8
+php_value date.timezone Europe/Moscow
+
+RewriteRule ^([0-9a-zA-Z]+)$ index.php?page=$1
+RewriteRule ^manufacture/([0-9]+)$ index.php?page=manufacture&id=$1
+RewriteRule ^goods/([0-9]+)$ index.php?page=goods&id=$1
+
+ErrorDocument 500 http://shop.sorokinlive.ru/
+ErrorDocument 404 http://shop.sorokinlive.ru/
+ErrorDocument 403 http://shop.sorokinlive.ru/

@@ -1,0 +1,318 @@
+
+
+#page{
+    width: 980px;
+    margin: 0 auto;
+	min-height:70%;
+}
+
+header{
+	width: 100%;
+	background: url(/image/header_background.jpg) repeat;
+}
+
+.header-block{
+	width: 980px;
+	margin:0 auto;
+}
+.header-top{
+	padding-top: 10px;
+	height: 105px;
+}
+.logo{
+	display: inline-block;
+	width: 120px;
+}
+.header-contact {
+	display: inline-block;
+	float: right;
+	margin: 15px 0 0 0;
+	padding:0;
+}
+
+.header-contact a{
+	color: #000;
+}
+
+.header-contact li{
+	display: inline-block;
+	margin: 20px 20px 0 0;
+}
+.header-contact li img,
+.header-contact li h2{
+	display:block;
+	float:left;
+	padding: 0 0 0 7px;
+	margin: 0;
+}
+
+/* Верхнее меню */
+nav{
+	width: 980px;
+	height: 40px;
+	background: url(/image/main-menu-bg.png) repeat-x;
+}
+
+nav li{
+	display: inline-block;
+	margin-right: 15px;
+	padding: 0 5px 0 7px;
+	border-right: 1px ridge transparent;
+	border-left: 1px ridge transparent;
+}
+
+nav li:hover {
+	background: url(/image/main-menu-bg-hover-sprite.png) #f00 repeat-x;
+	border-right: 1px ridge #fff;
+	border-left: 1px ridge #fff;
+	
+}
+
+.active {
+	padding: 0 5px 0 7px;
+	background: url(/image/main-menu-bg-hover-sprite.png) #f00 repeat-x;
+	border-right: 1px ridge #fff;
+	border-left: 1px ridge #fff;
+	
+}
+
+nav li img{
+	display:block;
+	float: left;
+	padding: 10px;
+}
+
+nav li a{
+	display:block;
+	float: left;
+	margin: 0;
+	padding:10px 0;
+	color: #fff;
+	text-decoration: none;
+	font-size:16px;
+}
+
+nav input{
+	margin: 0;
+	font-size: 12px;
+	padding: 12px 0;
+	display: block;
+	background: none;
+	border: 0;
+}
+content{
+	display: inline-block;
+	width: 720px;
+	margin:0 auto;
+	vertical-align: top;
+}
+content p{
+	font-size: 12px;
+	color: #464543;
+	line-height: 1.4;
+	text-align: left;
+}
+
+#slider{
+	margin: 0 0 2em 0;
+}
+/* Боковая колонка */
+aside{
+	display: inline-block;
+	width: 250px;
+	vertical-align: top;
+	padding: 2px;
+}
+aside img{
+	margin: 0 1em 1em 0;
+	padding: 2px;
+	border: 4px solid #ccc;
+
+}
+
+article{
+	display: block;
+	float: left;
+	width: 720px;
+}
+
+footer{
+	background: #747B7E;
+	height: 100px;
+	color: #fff;
+}
+@media screen and (max-width:960px) {
+	aside{
+		display:none;
+	}
+	#page,content,article{
+		width:100%;
+	}
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                            ТОВАРЫ                                            */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+.goods{
+	width:210px;
+	float:left;
+	margin:5px;
+	padding: 5px;
+	border: 2px ridge gray;
+}
+
+.goods h5,p,a{
+	margin: 0px;
+}
+
+.goods h5{
+	height: 60px;
+}
+
+.goods a{
+	font-weight: bold;
+	color: #6B6B6B;
+}
+
+.goods a:hover{
+	color: #000;
+}
+
+.goods .description{
+	word-wrap: break-word; 
+	height: 50px;
+}
+
+.goods img{
+	display: block;
+	margin: 0 auto;
+	max-width: 160px;
+	height: 160px;
+	text-align: center;
+}
+
+.goods-single-image{
+	display: inline-block;
+	width: 25%;
+}
+.goods-single-block{
+	display: inline-block;
+	width: 70%;
+}
+
+.goods-single-block table{
+	border-top: 1px solid #ccc;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*                                            ПРОИЗВОДИТЕЛИ                                      */
+/*-----------------------------------------------------------------------------------------------*/
+
+.manufacture{
+	display: inline-block;
+	width: 230px;
+}
+
+.manufacture a,h3,p{
+	margin: 0;
+	padding: 0;
+}
+
+.manufacture p{
+	height: 35px;
+}
+
+.manufacture img{
+	display: block;
+	margin: 0;
+	max-width: 160px;
+	height: 120px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                           КОРЗИНА                                            */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+.cart{
+	border: 1px solid #ADC3D5;
+	width: 100%;
+	border-spacing: 5px;
+	margin-bottom: 20px;
+}
+
+.cart label{
+	padding-left: 20px;
+}
+
+.cart  input[type="text"]{
+	width: 100%;
+}
+
+.addcart img{
+	height: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                            ЗАКАЗ                                              */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+.order{
+	border-right: none;
+	border-top: none;
+	border-spacing: 0;
+}
+
+.order tr{
+	border-top: 1px solid #ADC3D5;
+}
+
+.order td{
+	border-right: 1px solid #ADC3D5;
+}
+
+.order .no-border{
+	border: none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                            TOOLTIP                                            */
+/*-----------------------------------------------------------------------------------------------*/
+
+	.toolTipWrapper { /* The wrapper holds its insides together */
+		width: 175px;
+		position: absolute; /* Absolute will make the tooltip float above other content in the page */
+		top: 140px;
+		display: none; /* It has to be displayed none so that the jQuery fadein and fadeout functions will work */
+		color: #FFF;
+		font-weight: bold;
+		font-size: 9pt; /* A font size is needed to maintain consistancy */
+	}
+	
+		.toolTipTop { /* Top section of the tooltip */
+			width: 175px;
+			height: 30px;
+			background: transparent url(/image/tooltip/bubbleTop.gif) no-repeat;
+		}
+
+		.toolTipMid { /* Middle section of the tooltip */
+			padding: 8px 15px;
+			background: #A1D40A url(/image/tooltip/bubbleMid.gif) repeat-x top;
+		}
+		
+		.toolTipBtm { /* Bottom Section of the tooltip */
+			height: 13px;
+			background: transparent url(/image/tooltip/bubbleBtm.gif) no-repeat;
+		}
+		
+		
+		
+		
+		

@@ -1,0 +1,35 @@
+.quest{
+	display: block;
+	width: 720px;
+	border-top: 1px ridge #C2C2C2;
+}
+
+.quest h3{
+	margin: 0 0 5px 0;
+}
+
+.quest p{
+	margin: 0 0 10px 0;
+}
+
+.answer{
+	display: block;
+	width: 520px;
+	margin-left: 30px;
+	border-top: 1px ridge #EEEEEE;
+}
+
+.answer h5{
+	margin: 0 0 5px 0;
+}
+
+.answer p{
+	margin: 0 0 10px 0;
+}
+
+#quest-form{
+	display: none;
+	width: 520px;
+	margin-top: 50px;
+}
+

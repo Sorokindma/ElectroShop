@@ -1,0 +1,30 @@
+.similar-products{
+	width: 100%;
+}
+
+.similar-products tr td{
+	display: inline-block;
+	width: 193px;
+	text-align: center;
+}
+
+.similar-products img{
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.similar-products-image{
+	display: block;
+	width: 185px;
+	padding: 5px;
+	border: 4px solid #ccc;
+}
+
+.similar-products-image:hover{
+	border: 4px solid #f00;
+}
+
+.similar-products-title{
+	width: 195px;
+	height: 30px;
+}
